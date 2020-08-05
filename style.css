@@ -1,6 +1,8 @@
 body {
+    display: block;
     margin: 0;
     background-color: #FFFFFF;
+    min-width: 595px;
 }
 
 .navBar {
@@ -159,15 +161,25 @@ body {
 
     .nav_categories {
         display: none;
-
-    }
-
-    .hambtn {
-        display: block;
     }
 
     .nav_categories.active {
         display: flex;
         flex-direction: column;
     }
+
+    .nav_categories.active li a {
+        padding-bottom: 7px;
+        border-bottom: #BDBDBD solid 1px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .hambtn {
+        display: block;
+        opacity: 0.5;
+    }
+
 }
