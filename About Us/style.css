@@ -32,6 +32,7 @@ body {
     align-items: center;
 }
 
+
 .nav_categories li {
     padding: 8px 30px;
 
@@ -40,6 +41,10 @@ body {
 .nav_categories li a:hover {
     color: #000000;
     transition: all 0.5s ease-in-out;
+}
+
+.nav_categories li:first-child a {
+    color: #000000;
 }
 
 .hambtn {
