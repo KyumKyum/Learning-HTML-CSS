@@ -1,0 +1,166 @@
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.nav_categories {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_categories li {
+    list-style: none;
+    padding: 0 20px;
+    margin-right: 43px;
+}
+
+.nav_categories li a {
+    text-decoration: none;
+    color: #898989;
+}
+
+.nav_categories li:nth-child(5) a {
+    color: #000000;
+}
+
+.nav_categories li a:hover {
+    color: #000000;
+    transition: 0.5s ease-in-out;
+}
+
+.navBar .toggle_button {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.main_container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.side_bar {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    min-width: 200px;
+}
+
+.year_list {
+    list-style: none;
+    margin-left: 30px;
+}
+
+.year {
+    margin: 20px 0;
+}
+
+.year a {
+    text-decoration: none;
+    color: #898989;
+}
+
+.year:first-child a {
+    color: #000000;
+}
+
+.year a:hover {
+    color: #000000;
+    transition: 0.5s ease-in-out;
+}
+
+.main_contents {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 1060px;
+}
+
+.semester_list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-self: start;
+    padding: 0 3rem 0 0;
+}
+
+.semester_list p {
+    margin: 0;
+    color: #898989;
+    font-size: 0.8rem;
+}
+
+.hackaton_list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.hackaton {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+}
+
+.hackaton>div {
+    width: 100px;
+    height: 100px;
+    background-color: #E0E0E0;
+}
+
+.hackaton>p {
+    font-size: 1rem;
+    color: #898989;
+}
+
+@media screen and (max-width: 925px) {
+
+    .main_content {
+        min-width: 400px;
+    }
+
+    .navBar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navBar .toggle_button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav_categories {
+        display: none;
+    }
+
+    .nav_categories.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
